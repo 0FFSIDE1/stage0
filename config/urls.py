@@ -24,10 +24,10 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Intern test API",
-        default_version='v1',
-        description="API documentation for stage zero project",
-        contact=openapi.Contact(email="info@offsideint.com"),
+        title="User Data API",
+        default_version="v1",
+        description="API for retrieving user details including email, datetime, and GitHub repo URL.",
+        contact=openapi.Contact(email="offsideint@gmail.com"),
         license=openapi.License(name="MIT License"),
     ),
     public=True,
