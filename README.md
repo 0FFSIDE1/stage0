@@ -57,7 +57,7 @@ https://hng.tech/hire/python-developers
 The `UserData` API provides user details, including email, the current datetime, and a GitHub repo URL.
 
 ## Base URL
-http://127.0.0.1:8000/api/v1/
+http://127.0.0.1:8000
 
 ## Endpoints
 
