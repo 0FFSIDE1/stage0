@@ -11,6 +11,6 @@ class UserData(APIView):
         data = {
             'email': 'offsideint@gmail.com',
             'date': datetime.utcnow().isoformat() + "Z",
-            'github_url': ''
+            'github_url': 'https://github.com/0FFSIDE1/stage0'
         }
         return Response(data, status=status.HTTP_200_OK)
