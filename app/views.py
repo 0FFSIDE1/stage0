@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -37,7 +37,7 @@ class UserData(APIView):
         """
         data = {
             'email': 'offsideint@gmail.com',
-            'current_datetime': datetime.utcnow().isoformat() + "Z",
+            'current_datetime': (datetime.utcnow() + timedelta(hours=1)).isoformat() + "Z",
             'github_url': 'https://github.com/0FFSIDE1/stage0'
         }
         return Response(data, status=status.HTTP_200_OK)
